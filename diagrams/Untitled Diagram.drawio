@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-01-27T02:25:21.483Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36" etag="IG19OkrtqAQI37-7QIZZ" version="14.2.7" type="github">
+<mxfile host="app.diagrams.net" modified="2021-01-27T02:42:25.090Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36" etag="uRZL2D-jfJq0PeMrkgKq" version="14.2.7" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -47,8 +47,48 @@
         <mxCell id="x5veIcxIF9MqgdUAbz0h-6" value="前端支持配置单个API节点的参数，包括：&lt;br&gt;输入字段，输出字段&lt;br&gt;API参数" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="400" y="270" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="x5veIcxIF9MqgdUAbz0h-11" value="前端传json到后台&lt;br&gt;后台转为bpmn格式&lt;br&gt;创建workflow" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="x5veIcxIF9MqgdUAbz0h-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="x5veIcxIF9MqgdUAbz0h-11" target="x5veIcxIF9MqgdUAbz0h-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x5veIcxIF9MqgdUAbz0h-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="x5veIcxIF9MqgdUAbz0h-11" target="x5veIcxIF9MqgdUAbz0h-19">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="450" y="510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x5veIcxIF9MqgdUAbz0h-11" value="APIserver存储API，同时把编排格式发送到activiti" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="400" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="x5veIcxIF9MqgdUAbz0h-14" value="&lt;span&gt;前端传json到后台&lt;/span&gt;&lt;br&gt;&lt;span&gt;后台转为bpmn格式&lt;/span&gt;&lt;br&gt;&lt;span&gt;创建workflow&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="600" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="x5veIcxIF9MqgdUAbz0h-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="x5veIcxIF9MqgdUAbz0h-16" target="x5veIcxIF9MqgdUAbz0h-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x5veIcxIF9MqgdUAbz0h-16" value="调用编排API" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="160" y="510" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="x5veIcxIF9MqgdUAbz0h-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="x5veIcxIF9MqgdUAbz0h-17" target="x5veIcxIF9MqgdUAbz0h-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x5veIcxIF9MqgdUAbz0h-17" value="用户直接调用kong接口" style="whiteSpace=wrap;html=1;rounded=1;shadow=0;strokeWidth=1;glass=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="160" y="585" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="x5veIcxIF9MqgdUAbz0h-19" value="注册到kong" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="600" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="x5veIcxIF9MqgdUAbz0h-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="x5veIcxIF9MqgdUAbz0h-21" target="x5veIcxIF9MqgdUAbz0h-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x5veIcxIF9MqgdUAbz0h-21" value="kong调用activiti接口发起任务" style="whiteSpace=wrap;html=1;rounded=1;shadow=0;strokeWidth=1;glass=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="160" y="680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="x5veIcxIF9MqgdUAbz0h-23" value="activiti任务接口返回执行结果" style="whiteSpace=wrap;html=1;rounded=1;shadow=0;strokeWidth=1;glass=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="160" y="770" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="x5veIcxIF9MqgdUAbz0h-25" value="Activiti能做什么：&lt;br&gt;帮助我们定义流程&lt;br&gt;帮助我们执行流程&lt;br&gt;Activiti不能做什么：&lt;br&gt;流程中的动作&lt;br&gt;流程的输入输出" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="370" y="600" width="300" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
